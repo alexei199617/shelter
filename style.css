@@ -11,6 +11,7 @@ html {
     -webkit-text-size-adjust: 100%;
     font-family: 'Inika';
     font-style: normal;
+    transition: 0.3s;
 }
 * {
     box-sizing: border-box;
@@ -62,6 +63,7 @@ html {
     line-height: 160%;
     color: #CDCDCD;
     text-decoration: none;
+    transition: 0.3s;
 }
 .navA:hover {
     color: #FAFAFA;
@@ -116,6 +118,7 @@ html {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
+    transition: 0.3s;
 }
 .btn:hover {
     cursor: pointer;
@@ -187,6 +190,7 @@ html {
     padding-top: 12px;
     text-align: center;
     align-items: center;
+    transition: 0.3s;
 }
 .sliderArr:hover {
     cursor: pointer;
@@ -199,10 +203,15 @@ html {
     background: #FAFAFA;
     border-radius: 9px;
     overflow: hidden;
+    transition: 0.5s;
 }
 .petCard:hover, .petsCard:hover {
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+.petCard:hover > .petCardBtn, .petsCard:hover > .petCardBtn {
+    background: #FDDCC4;
 }
 .petCardImg {
     width: 270px;

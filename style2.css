@@ -36,6 +36,7 @@
     width: 270px;
     height: 435px;
     margin: 15px 0;
+    transition: 0.3s;
 }
 .petsImg {
     width: 270px;
@@ -83,10 +84,12 @@
 .circleCant {
     border: 2px solid #CDCDCD;
     color: #CDCDCD;
+    transition: 0.3s;
 }
 .circleCan {
     border: 2px solid #F1CDB3;
     color: #292929;
+    transition: 0.3s;
 }
 .circleCan:hover {
     cursor: pointer;
