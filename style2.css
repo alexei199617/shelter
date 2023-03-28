@@ -4,4 +4,90 @@
 }
 .startHeader {
     height: 120px;
+    padding: 30px 40px;
+}
+.startH1, .navA {
+    color: #545454;
+}
+.navAActive, .startP {
+    color: #292929;
+}
+.navA:hover {
+    color: #292929;
+}
+.petsH3 {
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 45px;
+}
+.petsBox {
+    height: 930px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.petsCard {
+    background: #FAFAFA;
+    border-radius: 9px;
+    overflow: hidden;
+    width: 270px;
+    height: 435px;
+    margin: 15px 0;
+}
+.petsImg {
+    width: 270px;
+    height: 270px;
+}
+.petsName {
+    margin: 30px auto 29px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.petsControllBlok {
+    margin: 0 auto;
+    margin-top: 44px;
+    width: 340px;
+    height: 52px;
+    justify-content: space-between;
+}
+.controlCircle {
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    padding-top: 14px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.petsPage {
+    background: #F1CDB3;
+}
+.petsPageH4 {
+    font-family: 'Georgia';
+    font-size: 20px;
+    line-height: 115%;
+    font-weight: 100;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+.circleCant {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+.circleCan {
+    border: 2px solid #F1CDB3;
+    color: #292929;
+}
+.circleCan:hover {
+    background: #F1CDB3;
 }

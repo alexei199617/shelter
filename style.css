@@ -218,6 +218,21 @@ html {
 .imgWoody {
     background: url(img/pets-Woody.jpg) center;
 }
+.imgSophia {
+    background: url(img/pets-Sophia.jpg) center;
+}
+.imgTimmy {
+    background: url(img/pets-Timmy.jpg) center;
+}
+.imgCharly {
+    background: url(img/pets-Charly.jpg) center;
+}
+.imgScarlett {
+    background: url(img/pets-Scarlett.jpg) center;
+}
+.imgFreddie {
+    background: url(img/pets-Freddie.jpg) center;
+}
 .help {
     height: 611px;
     background-color: #FFF;
