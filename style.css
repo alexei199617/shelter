@@ -31,6 +31,9 @@ html {
     padding-top: 30px;
     justify-content: space-between;
 }
+.logoLink {
+    text-decoration: none;
+}
 .startH1 {
     font-family: 'Georgia';
     font-weight: 400;
