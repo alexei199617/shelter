@@ -146,6 +146,7 @@ html {
 .aboutTextH3 {
     width: 370px;
     margin-top: 14px;
+    font-weight: 100;
     font-family: 'Georgia';
     font-size: 35px;
     line-height: 130%;
