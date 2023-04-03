@@ -85,6 +85,7 @@ html {
     width: 460px;
 }
 .startTextH2 {
+    width: 315px;
     font-family: 'Georgia';
     font-weight: 100;
     font-size: 44px;
@@ -93,7 +94,7 @@ html {
     letter-spacing: -0.1px;
 }
 .startTextP {
-    margin: 42px 0 41px;
+    margin: 42px 0 56px;
     font-family: 'Arial';
     font-size: 15px;
     line-height: 160%;
@@ -105,9 +106,10 @@ html {
     height: 728px;
 }
 .startBtn {
-    padding: 15px 35px;
+    text-decoration: none;
+    padding: 16px 45px;
     width: 207px;
-    height: 52px;
+    /* height: 180px; */
 }
 .btn {
     background: #F1CDB3;
@@ -142,6 +144,7 @@ html {
     width: 430px;
 }
 .aboutTextH3 {
+    width: 370px;
     margin-top: 14px;
     font-family: 'Georgia';
     font-size: 35px;
@@ -165,6 +168,8 @@ html {
     background-color: #F6F6F6;
 }
 .petsH3 {
+    margin: 0 auto;
+    width: 400px;
     text-align: center;
     font-family: 'Georgia';
     font-weight: 100;
@@ -236,7 +241,12 @@ html {
     border: 2px solid #FDDCC4;
 }
 .petsBtn {
-    margin: 0 470px;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
     margin-top: 59px;
     font-family: 'Georgia';
     font-size: 17px;
