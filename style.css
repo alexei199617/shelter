@@ -111,7 +111,6 @@ html {
     text-decoration: none;
     padding: 16px 45px;
     width: 207px;
-    /* height: 180px; */
 }
 .btn {
     background: #F1CDB3;
@@ -301,7 +300,6 @@ html {
 .helpList {
     margin: auto;
     margin-top: 5px;
-    /* width: 1050px; */
     justify-content: space-around;
     text-align: center;
     align-items: center;
@@ -409,7 +407,6 @@ html {
     font-family: 'Georgia';
     font-size: 20px;
     line-height: 115%;
-    /* letter-spacing: 0.06em; */
     letter-spacing: -0.15px;
     color: #545454;
 }
@@ -489,7 +486,7 @@ html {
     margin-top: -5px;
 }
 
-@media screen and (max-width: 2800px) {
+@media screen and (max-width: 800px) {
     html {
         width: 768px;
     }
@@ -540,10 +537,31 @@ html {
     }
     .donation {
         height: 783px;
+        flex-direction: column-reverse;
+        padding: 80px 131px 100px;
+        align-items: center;
     }
     .footer {
         height: 639px;
+        flex-wrap: wrap;
+        padding: 30px 64px 0;
+        background-size: cover;
+    }
+    .footerH3 {
+        margin-top: 0;
+    }
+    .footerImgDog {
+        margin: 0 auto;
+        align-items: center;
+        margin-top: -11px;
+    }
+    .pets {
+        padding: 80px 30px;
+    }
+    .petsSlider {
+        width: 600px;
+        margin: 0 10px;
     }
 }
 
-@media screen and (max-width: 425px) {}
+@media screen and (max-width: 2425px) {}
