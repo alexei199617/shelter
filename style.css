@@ -26,7 +26,9 @@ html {
 .start {
     height: 908px;
     padding: 0 40px;
-    background: url(img/start-back.jpg) center;
+    background-image: url(img/start-back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .startHeader {
     padding-top: 30px;
@@ -486,3 +488,62 @@ html {
 .footerPinImgTwo {
     margin-top: -5px;
 }
+
+@media screen and (max-width: 2800px) {
+    html {
+        width: 768px;
+    }
+    .start {
+        height: 1165px;
+        padding: 0 30px;
+        background-size: cover;
+    }
+    .startMain {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .startText {
+        margin-top: 0px;
+    }
+    .startBtn {
+        align-items: center;
+        text-align: center;
+        margin-left: calc(50% - 207px/2 - 0.5px);
+    }
+    .startImg {
+        margin-top: 115px;
+        margin-left: calc(50% - 569px/2 + 70px);
+        background-size: contain;
+        width: 569px;
+        height: 593px;
+    }
+    .about {
+        height: 1048px;
+        padding: 80px 169px;
+    }
+    .aboutBox {
+        flex-direction: column-reverse;
+    }
+    .aboutTextH3 {
+        margin-top: 0;
+    }
+    .aboutImg {
+        margin: 80px 65px;
+    }
+    .petCard768 {
+        display: none;
+    }
+    .help {
+        height: 779px;
+        padding: 80px 40px;
+    }
+    .donation {
+        height: 783px;
+    }
+    .footer {
+        height: 639px;
+    }
+}
+
+@media screen and (max-width: 425px) {}
