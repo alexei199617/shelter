@@ -116,4 +116,27 @@
     }
 }
 
-@media screen and (max-width: 2425px) {}
+@media screen and (max-width: 425px) {
+    .burgerBtn {
+        background-image: url(img/burger-black.svg);
+    }
+    .burgerBtn:hover {
+        background-color: #CDCDCD;
+    }
+    .startHeader {
+        padding: 30px 20px;
+    }
+    .pets {
+        height: 1649px;
+    }
+    .petsH3 {
+        font-size: 25px;
+    }
+    .petsBox {
+        padding: 11px 14px 0;
+    }
+    .petsControllBlok {
+        width: 300px;
+        margin-top: 44px;
+    }
+}

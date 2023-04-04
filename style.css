@@ -579,10 +579,18 @@ html {
     }
     .burgerBtn {
         margin-top: 19px;
-        background: url(img/burger.svg) center;
+        background-image: url(img/burger.svg);
+        background-position: center;
         width: 30px;
         height: 22px;
         display: block;
+        transition: 0.3s;
+    }
+    .burgerBtn:hover {
+        cursor: pointer;
+        background-color: #292929;
+        border-radius: 5px;
+        overflow: hidden;
     }
     .startText {
         margin: 0;
