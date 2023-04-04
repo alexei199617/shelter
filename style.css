@@ -487,7 +487,7 @@ html {
     margin-top: -5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 2800px) {
     html {
         width: 768px;
     }
@@ -566,7 +566,7 @@ html {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 2425px) {
     html {
         width: 320px;
     }
@@ -638,5 +638,106 @@ html {
         height: 360px;
         background-size: contain;
         margin: 38px 10px;
+    }
+    .petsH3 {
+        font-size: 25px;
+        width: auto;
+        letter-spacing: 1.4px;
+    }
+    .pets {
+        padding: 42px 10px;
+        height: 791px;
+    }
+    .petCard320 {
+        display: none;
+    }
+    .petsSliderBox {
+        margin-top: 42px;
+    }
+    .help {
+        height: 745px;
+        padding: 42px 15px;
+    }
+    .helpH3 {
+        font-size: 25px;
+        letter-spacing: 1.4px;
+    }
+    .helpListName {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .helpImg {
+        height: 50px;
+        width: 135px;
+        background-size: contain;
+    }
+    .helpListBox {
+        margin-top: 30px;
+        height: 87px;
+        width: 135px;
+        align-items: center;
+        text-align: center;
+    }
+    .helpList {
+        margin-top: 11px;
+        justify-content: space-between;
+    }
+    .donation {
+        height: 542px;
+        padding: 42px 20px;
+        text-align: center;
+    }
+    .donationH3 {
+        font-size: 25px;
+        letter-spacing: 1.4px;
+        line-height: 125%;
+    }
+    .donationH5 {
+        font-size: 15px;
+        font-weight: 100;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    .donationBlock {
+        width: 280px;
+    }
+    .donationCreditNum {
+        font-size: 15px;
+        line-height: 110%;
+        margin-top: 5px;
+    }
+    .donationCredit {
+        width: 281px;
+        height: 43px;
+    }
+    .donationCreditP {
+        text-align: justify;
+    }
+    .donationImg {
+        width: 260px;
+        height: 135.2px;
+        background-size: contain;
+    }
+    .footer {
+        height: 809px;
+        padding: 30px 10px 0;
+        text-align: center;
+        align-items: center;
+    }
+    .none320 {
+        display: none;
+    }
+    .footerH3 {
+        font-size: 25px;
+        letter-spacing: 1.4px;
+    }
+    .footerMailImg {
+        margin-left: 25px;
+    }
+    .footerPhoneImg {
+        margin-left: 29px;
+    }
+    .footerTelH4 {
+        margin-top: 3px;
     }
 }
