@@ -720,12 +720,16 @@ html {
     }
     .footer {
         height: 809px;
-        padding: 30px 10px 0;
+        padding: 25px 10px 0;
         text-align: center;
         align-items: center;
+        justify-content: space-around;
     }
     .none320 {
         display: none;
+    }
+    .none320Of {
+        display: block;
     }
     .footerH3 {
         font-size: 25px;
@@ -739,5 +743,29 @@ html {
     }
     .footerTelH4 {
         margin-top: 3px;
+    }
+    .footerBox {
+        height: 250px;
+    }
+    .footerBoxCenter {
+        margin-left: 0;
+    }
+    .footerImgDog {
+        margin-top: 7px;
+        width: 260px;
+        height: 270px;
+        background-size: contain;
+    }
+    .sliderArr320On {
+        margin: auto;
+        display: flex;
+        width: 184px;
+        justify-content: space-between;
+    }
+    .sliderArr {
+        margin-top: 20px;
+    }
+    .petsBtn {
+        margin-top: 41px;
     }
 }
