@@ -137,7 +137,9 @@ html {
     justify-content: space-between;
 }
 .aboutImg {
-    background: url(img/about-pets.png) center;
+    background-image: url(img/about-pets.png);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 300px;
     height: 408px;
 }
@@ -162,7 +164,6 @@ html {
 }
 .aboutTextPMargin {
     margin: 24px 0 25px;
-
 }
 .pets {
     padding: 80px 40px;
@@ -486,7 +487,7 @@ html {
     margin-top: -5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     html {
         width: 768px;
     }
@@ -520,6 +521,7 @@ html {
         padding: 80px 169px;
     }
     .aboutBox {
+        width: 550px;
         flex-direction: column-reverse;
     }
     .aboutTextH3 {
@@ -564,4 +566,77 @@ html {
     }
 }
 
-@media screen and (max-width: 2425px) {}
+@media screen and (max-width: 425px) {
+    html {
+        width: 320px;
+    }
+    .start {
+        height: 823px;
+        padding: 0 20px;
+    }
+    .navHiden320 {
+        display: none;
+    }
+    .burgerBtn {
+        margin-top: 19px;
+        background: url(img/burger.svg) center;
+        width: 30px;
+        height: 22px;
+        display: block;
+    }
+    .startText {
+        margin: 0;
+        text-align: center;
+        width: 295px;
+    }
+    .startMain {
+        margin-top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .startTextH2 {
+        margin: auto;
+        font-size: 25px;
+        line-height: 130%;
+        width: 200px;
+        text-align: center;
+        letter-spacing: 1.4px;
+    }
+    .startBtn {
+        margin-left: 0;
+    }
+    .startImg {
+        margin-left: calc(50% - 260px/2 + 30px);
+        margin-top: 120px;
+        background-size: contain;
+        width: 260px;
+        height: 272px;
+    }
+    .about {
+        height: 974px;
+        padding: 42px 25px;
+    }
+    .aboutBox {
+        width: 280px;
+    }
+    .aboutText {
+        width: 270px;
+    }
+    .aboutTextH3 {
+        width: auto;
+        text-align: center;
+        font-size: 25px;
+    }
+    .aboutTextP {
+        text-align: justify;
+    }
+    .aboutTextPMargin {
+        margin: 24px 0 22px;
+    }
+    .aboutImg {
+        width: 258px;
+        height: 360px;
+        background-size: contain;
+        margin: 38px 10px;
+    }
+}
