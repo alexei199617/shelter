@@ -120,9 +120,6 @@
     .burgerBtn {
         background-image: url(img/burger-black.svg);
     }
-    .burgerBtn:hover {
-        background-color: #CDCDCD;
-    }
     .startHeader {
         padding: 30px 20px;
     }
@@ -138,5 +135,17 @@
     .petsControllBlok {
         width: 300px;
         margin-top: 44px;
+    }
+    .burgerBtnRotate {
+        background-image: url(img/burger.svg);
+    }
+    .navA {
+        color: #CDCDCD;
+    }
+    .navA:hover {
+        color: #FAFAFA;
+    }
+    .navAActive {
+        color: #FAFAFA;
     }
 }
