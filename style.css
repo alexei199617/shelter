@@ -224,6 +224,8 @@ html {
 .petCardImg {
     width: 270px;
     height: 270px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .petCardName {
     margin-top: 29px;
