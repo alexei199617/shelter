@@ -95,8 +95,21 @@ const petsArr = {
 const burgerBtn = document.querySelector('.burgerBtn');
 const burgerMenuBlock = document.querySelector('.burgerMenuBlock');
 const burgerMenu = document.querySelector('.burgerMenu');
+const petsNameArr = ['Jennifer', 'Sophia', 'Woody', 'Scarlett', 'Katrine', 'Timmy', 'Freddie', 'Charly'];
+const petsControllBlok = document.querySelector('.petsControllBlok');
+const petCard1 = document.getElementById('petCard1');
+const petCard2 = document.getElementById('petCard2');
+const petCard3 = document.getElementById('petCard3');
+const petsPageH4 = document.querySelector('.petsPageH4');
+const arrStart = document.querySelector('.arrStart');
+const arrPrev = document.querySelector('.arrPrev');
+const arrNext = document.querySelector('.arrNext');
+const arrEnd = document.querySelector('.arrEnd');
 let randomNumArr = ['Jennifer', 'Sophia', 'Woody', 'Scarlett', 'Katrine', 'Timmy', 'Freddie', 'Charly'];
 let newRandomNumArr = [];
+let petsNamePagesArr = [];
+let petsPages = 1;
+getPetsArr(petsNameArr);
 
 //активация и деактивация бургер меню (пункт 1)
 burgerBtn.addEventListener('click', openBurger);
@@ -142,18 +155,17 @@ function burgerLinkClick(event) {
 
 //перемешивание карточек (часть 2)
 function getNewArr() {
-    shuffle(randomNumArr);
+    mixingArr(randomNumArr);
     addItemNewArr();
 }
 getNewArr()
-function shuffle(arr) {
-    arr.sort(() => Math.random() - 0.5);
+function mixingArr(arr) {
+    return(arr.sort(() => Math.random() - 0.5));
 }
 function getNextArr() {
-    shuffle(randomNumArr);
+    mixingArr(randomNumArr);
     addItemNewArr();
     addItemOldArr();
-    console.log(newRandomNumArr);
 }
 function addItemNewArr() {
     for (let i = 0; i < 3; i++) {
@@ -167,9 +179,7 @@ function addItemOldArr() {
 }
 
 // слайдер (часть 2)
-const petCard1 = document.getElementById('petCard1');
-const petCard2 = document.getElementById('petCard2');
-const petCard3 = document.getElementById('petCard3');
+
 document.getElementById('sliderArrLeft').addEventListener('click', sliderMainClick);
 document.getElementById('sliderArrRight').addEventListener('click', sliderMainClick);
 document.getElementById('sliderArrLeft320').addEventListener('click', sliderMainClick);
@@ -181,16 +191,17 @@ function sliderMainClick (event) {
 function getNextSlide (event) {
     for (let i=0; i<3; i++) {
         let name = document.getElementById('petCard' + (i+1));
-        name.childNodes[3].innerHTML = petsArr[newRandomNumArr[i]].name;
-        name.childNodes[1].style.backgroundImage = petsArr[newRandomNumArr[i]].img;
+        getWritePetCard(name, i);
     }
 }
 sliderMainClick()
-
+function getWritePetCard (id, num) {
+    id.childNodes[3].innerHTML = petsArr[newRandomNumArr[num]].name;
+    id.childNodes[1].style.backgroundImage = petsArr[newRandomNumArr[num]].img;
+}
 
 
 // пагинация pets (часть 3)
-const petsControllBlok = document.querySelector('.petsControllBlok');
 petsControllBlok.addEventListener('click', pageClick);
 function pageClick(event) {
     let et = event.target;
@@ -204,3 +215,61 @@ function pageClick(event) {
         return
     }
 }
+function getPetsArr (arr) {
+    let mainArr = arr;
+    for (let i = 0; i < 6; i++) {
+        mixingArr(mainArr).forEach((item, i) => {
+            petsNamePagesArr.push(item);
+        });
+        let num = i*8;
+        for (let a = 0; a < 8; a++) {
+            // console.log(petsNamePagesArr[num+a])
+        }
+    }
+    console.log(petsNamePagesArr);
+}
+
+function getPages (page, arr) {
+    let num = (page-1)*8;
+    if (num == 40) {
+        getCircleCanBtn('end')
+    } else if (num == 0) {
+        getCircleCanBtn('start')
+    } else {
+        getCircleCanBtn('center')
+    }
+    for (let a = 0; a < 8; a++) {
+        console.log(petsNamePagesArr[num+a])
+    }
+    petsPageH4.innerHTML = String(page);
+}
+getPages(petsPages, petsNamePagesArr);
+function getCircleCanBtn (str) {
+    if (str == 'start') {
+        removeCircleCan(arrStart);
+        removeCircleCan(arrPrev);
+        addCircleCan(arrNext);
+        addCircleCan(arrEnd);
+    } else if (str == 'end') {
+        addCircleCan(arrStart);
+        addCircleCan(arrPrev);
+        removeCircleCan(arrNext);
+        removeCircleCan(arrEnd);
+    } else {
+        addCircleCan(arrStart);
+        addCircleCan(arrPrev);
+        addCircleCan(arrNext);
+        addCircleCan(arrEnd);
+    }
+}
+function addCircleCan (str) {
+    str.classList.add('circleCan');
+    str.classList.remove('circleCant');
+}
+function removeCircleCan (str) {
+    str.classList.add('circleCant');
+    str.classList.remove('circleCan');
+}
+
+
+//
